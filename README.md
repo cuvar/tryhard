@@ -6,17 +6,17 @@ Personal playground for various technologies and web frameworks
 ## Technologies
 
 current:
-- [svelte](https://svelte.dev/)
-- [solidjs](https://www.solidjs.com/)
-- [yew](https://yew.rs/)
-- [lume](https://lume.land/)
+- [Svelte](https://svelte.dev/)
+- [SolidJS](https://www.solidjs.com/)
+- [Yew](https://yew.rs/)
+- [Lume](https://lume.land/)
 
 planned:
-- [golang](https://go.dev/)
-- [rust](https://www.rust-lang.org/)
-- [deno](https://deno.land/)
-- [bun](https://bun.sh/)
-- [nextra](https://github.com/shuding/nextra)
-- [alephjs](https://alephjs.org/)
-- [fresh](https://fresh.deno.dev/)
-- [ultra](https://ultrajs.dev/)
+- [Golang](https://go.dev/)
+- [Rust](https://www.rust-lang.org/)
+- [Deno](https://deno.land/)
+- [Bun](https://bun.sh/)
+- [Nextra](https://github.com/shuding/nextra)
+- [AlephJS](https://alephjs.org/)
+- [Fresh](https://fresh.deno.dev/)
+- [UltraJS](https://ultrajs.dev/)
