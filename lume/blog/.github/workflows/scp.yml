@@ -1,0 +1,29 @@
+name: Deploy to server
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Use Deno
+        uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+      - name: Checkout repo
+        uses: actions/checkout@v3
+      - name: Deno build
+        working-directory: ./src
+        run: deno run -A https://deno.land/x/lume@v1.9.1/ci.ts
+      - name: Copy to production via SCP
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.PRIVATEKEY }}
+          source: "src"
+          target: "blog"
+          debug: true
+          rm: true
