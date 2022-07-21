@@ -1,2 +1,13 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+  import { onMount } from 'svelte';
+  import { createScene } from "./scene.js";
+  /**
+* @type {HTMLCanvasElement}
+*/
+  let el;
+  onMount(() => {
+    createScene(el)
+  });
+</script>
+
+<canvas bind:this={el}></canvas>
